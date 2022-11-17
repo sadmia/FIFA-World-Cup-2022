@@ -1,0 +1,153 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	font-family: arial;
+}
+
+
+.groupList {
+	width: 100%;
+	height: 100px;
+	position: relative;
+}
+
+.groupList img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.groupList h1 {
+	position: absolute;
+	content: "";
+	left: 30px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 20px;
+	color: #fff;
+}
+
+.tmDiv {
+	width: 1170px;
+	margin: 0 auto;
+}
+.tmDiv p {
+	font-size: 16px;
+	color: #333;
+	padding: 10px 25px;
+}
+
+.ListGroup {
+	width: 100%;
+	height: 150px;
+	border: 1px solid #fff;
+	background: #333;
+	position: relative;
+}
+.listLeft {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	padding: 20px;
+	box-sizing: border-box;
+	border-right: 1px solid #fff;
+}
+.listright {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	content: "";
+	right: 0;
+	top: 0;
+	padding: 20px;
+	box-sizing: border-box;
+	border-left: 1px solid #fff;
+}
+
+.listLeft ul, .listright ul {
+	padding: 0;
+	margin-top: 0;
+	width: 100%;
+	position: relative;
+}
+.listLeft ul li, .listright ul li {
+	list-style: none;
+	margin: 5px;
+	color: #fff;
+	height: 30px;
+	position: relative;
+}
+.listLeft ul li img, .listright ul li img {
+	width: 30px;
+}
+.listLeft ul li span, .listright ul li span {
+	position: absolute;
+	content: "";
+	left: 40px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.TimeAndDate {
+	position: absolute;
+	content: "";
+	right: 0;
+	top: 0;
+	width: 200px;
+	height: 100%;
+	border-left: 1px solid #fff;
+}
+.TimeAndDate p {
+	text-align: center;
+	color: #fff;
+	line-height: 23px;
+	margin-top: 20px;
+}
+
+
+
+.TimeCoutn {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	border: 1px solid #fff;
+}
+
+.dayDiv, .hourDiv, .miniteDiv, .secendDiv {
+	width: 25%;
+	height: 100%;
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	box-sizing: border-box;
+	border-right: 1px solid #fff;
+}
+
+.hourDiv {
+	left: 25%;
+}
+.miniteDiv {
+	left: 50%;
+}
+.secendDiv {
+	left: 75%;
+	border-right: none;
+}
+
+.dayDiv span, .hourDiv span, .miniteDiv span, .secendDiv span {
+	position: absolute;
+	content: "";
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 45px;
+	color: #fff;
+}
